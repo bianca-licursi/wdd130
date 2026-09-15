@@ -1,16 +1,15 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-
 }
 
-header footer {
+header,
+footer {
     background-color: #333;
     color: #fff;
     padding: 10px;
     text-align: center;
     font-size: 1.5rem;
-
 }
 
 main {
@@ -35,15 +34,14 @@ img {
 
 section {
     margin: 20px 0;
-    border: 1px solid rgb(0 0 0 /10%);
+    border: 1px solid rgb(0 0 0 / 10%);
     padding: 10px;
     background-color: #abe;
-    font-size: .9rem;
+    font-size: 0.9rem;
 }
 
 section p {
     margin: 10px;
-
 }
 
 ul {
@@ -51,5 +49,5 @@ ul {
 }
 
 footer {
-    font-size: .9rem;
+    font-size: 0.9rem;
 }
