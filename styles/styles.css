@@ -1,81 +1,79 @@
- * {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
- }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
- body {
-     font-family: Arial, sans-serif;
-     line-height: 1.6;
- }
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
 
- /* Class Selectors */
+/* Class Selectors */
 
- .box {
-     margin: 1rem;
-     border: 1px solid rgb(0 0 0 / 10%);
-     padding: 1rem;
-     background-color: #ddd;
-     color: #000;
- }
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+    overflow: hidden;
+}
 
- nav {
-     background-color: #333;
-     padding: 1rem;
- }
+nav {
+    background-color: #333;
+    padding: 1rem;
+}
 
- nav a {
-     color: #fff;
-     padding: 0.5rem;
-     display: block;
-     text-decoration: none;
- }
+nav a {
+    color: #fff;
+    padding: 0.5rem;
+    display: block;
+    text-decoration: none;
+}
 
- h1 {
-     color: #000;
- }
+h1 {
+    color: #000;
+}
 
- p {
-     padding: 0;
- }
+p {
+    padding: 0;
+}
 
- main {
-     max-width: 840px;
- }
+main {
+    max-width: 840px;
+}
 
- main img {
-     width: 150px;
-     height: auto;
-     border: 1px solid #ccc;
-     padding: 5px;
-     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-     float: right;
- }
+main img {
+    width: 150px;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    float: right;
+}
 
- aside {
+aside {
+    width: 20rem;
+    text-align: center;
+    position: relative;
+}
 
-     width: 20rem;
-     text-align: center;
-     position: relative;
- }
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
 
- aside h2 {
-     position: absolute;
-     top: 47px;
-     left: 50%;
-     transform: translateX(-50%);
-     white-space: nowrap;
- }
+aside img {
+    width: 100%;
+    height: auto;
+}
 
- aside img {
-     width: 200px;
-     height: auto;
-     float: right;
- }
-
- footer {
-     margin-top: 15px;
-     border-top: 1px solid #000;
-     text-align: center;
-
- }
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+}
