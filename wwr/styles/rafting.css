@@ -25,6 +25,23 @@ footer {
     margin: 0 auto;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    list-style: none;
+}
+
+header img {
+    width: 100px;
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
