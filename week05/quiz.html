@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML &amp; CSS Quiz</title>
+    <link rel="stylesheet" href="../styles/quiz.css">
+</head>
+
+<body>
+    <main>
+        <h1>HTML &amp; CSS Quiz</h1>
+        <p class="intro">Answer all four questions, then submit your quiz.</p>
+
+        <form action="#" method="get">
+
+            <div class="question">
+                <label for="q1">1. Fill in the blank: The HTML element used to create a hyperlink is
+                    the &lt;___&gt; element.</label>
+                <input type="text" id="q1" name="q1" required>
+            </div>
+
+            <div class="question">
+                <label for="q2">2. In your own words, what is the purpose of CSS?</label>
+                <textarea id="q2" name="q2" rows="4" required></textarea>
+            </div>
+
+            <div class="question">
+                <label for="q3">3. Which CSS property changes the text color of an element?</label>
+                <select id="q3" name="q3" required>
+                    <option value="" selected disabled>Choose One ...</option>
+                    <option value="background-color">background-color</option>
+                    <option value="color">color</option>
+                    <option value="font-style">font-style</option>
+                    <option value="text-align">text-align</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label for="q4">4. How many heading levels (h1 through h6) does HTML
+                    provide?</label>
+                <input type="number" id="q4" name="q4" min="0" max="20" required>
+            </div>
+
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </main>
+</body>
+
+</html>
