@@ -26,3 +26,111 @@
     </header>
 
     <main>
+        <h1>Contact Us</h1>
+
+        <section class="company-info">
+            <h2>Get in Touch</h2>
+
+            <p>
+                We would love to hear from you! Contact us with any
+                questions about our rafting adventures and reservations.
+            </p>
+
+            <address>
+                <p><strong>Rafting Mendoza</strong></p>
+                <p>Address: Mendoza, Argentina</p>
+                <p>Phone: +54 261 555-0100</p>
+                <p>
+                    Email:
+                    <a href="mailto:info@raftingmendoza.com">
+                        info@raftingmendoza.com
+                    </a>
+                </p>
+            </address>
+
+            <iframe src="https://maps.google.com/maps?q=Mendoza%2C%20Argentina&output=embed"
+              title="Map showing Mendoza, Argentina" width="400" height="300" loading="lazy">
+            </iframe>
+        </section>
+
+        <section class="employees">
+            <h2>Meet Our Team</h2>
+
+            <figure>
+                <img src="images/employee1.jpg" alt="Portrait of the rafting company manager">
+                <figcaption>Company Manager</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/employee2.jpg" alt="Portrait of a rafting guide">
+                <figcaption>Rafting Guide</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/employee3.jpg" alt="Portrait of a customer service representative">
+                <figcaption>Customer Service Representative</figcaption>
+            </figure>
+        </section>
+
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+
+            <form action="#" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <fieldset>
+                    <legend>What is the purpose of your message?</legend>
+
+                    <label for="general">
+                        <input type="radio" id="general" name="purpose" value="general" required>
+                        General Inquiry
+                    </label>
+
+                    <label for="reservation">
+                        <input type="radio" id="reservation" name="purpose" value="reservation">
+                        Reservation Question
+                    </label>
+
+                    <label for="suggestion">
+                        <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                        Website Suggestion
+                    </label>
+                </fieldset>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <label for="subscribe">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Rafting Mendoza | Bianca Licursi</p>
+
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="Facebook">
+            </a>
+
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="Instagram">
+            </a>
+
+            <a href="https://youtube.com">
+                <img src="images/youtube.svg" alt="YouTube">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
