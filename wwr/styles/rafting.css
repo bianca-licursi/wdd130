@@ -19,7 +19,7 @@ body {
 header,
 main,
 footer {
-    max-width: 840px;
+    max-width: 100%;
     width: 100%;
     margin: 0 auto;
 }
@@ -28,6 +28,18 @@ header {
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
+    max-width: 1000px;
+    padding: 16px 20px;
+    gap: 20px;
+}
+
+header img {
+    width: 100px;
+}
+
+header nav {
+    margin: 0;
+    padding: 0;
 }
 
 nav ul {
@@ -37,8 +49,17 @@ nav ul {
     list-style: none;
 }
 
-header img {
-    width: 100px;
+header nav a {
+    display: inline-block;
+    padding: 10px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover,
+header nav a:focus {
+    text-decoration: underline;
 }
 
 h1,
@@ -55,13 +76,11 @@ article {
     padding: 8px;
 }
 
-nav a {
-    color: var(--primary-color);
-}
-
 .socialmedia a {
     text-decoration: none;
 }
+
+/* About page hero */
 
 .hero {
     position: relative;
@@ -101,15 +120,7 @@ nav a {
     margin-left: 16px;
 }
 
-footer {
-    background-color: var(--primary-color);
-    color: #fff;
-}
-
-.socialmedia img {
-    width: 40px;
-    height: 40px;
-}
+/* History section */
 
 .history {
     display: grid;
@@ -119,9 +130,11 @@ footer {
 }
 
 .history h2 {
-    grid-column: 1 / 3;
+    grid-column: 1 / -1;
     text-align: center;
 }
+
+/* Adventures section */
 
 .adventures {
     display: grid;
@@ -130,7 +143,7 @@ footer {
 }
 
 .adventures h2 {
-    grid-column: 1 / 6;
+    grid-column: 1 / -1;
     text-align: center;
 }
 
@@ -150,46 +163,18 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Shared responsive layout */
-header,
-main,
-footer {
-    max-width: 100%;
-}
-
-header {
-    max-width: 1000px;
-    width: 100%;
-    padding: 16px 20px;
-    gap: 20px;
-}
-
-header nav {
-    margin: 0;
-    padding: 0;
-}
-
-header nav a {
-    display: inline-block;
-    padding: 10px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-header nav a:hover,
-header nav a:focus {
-    text-decoration: underline;
-}
+/* Shared footer */
 
 footer {
     max-width: 1000px;
-    width: 100%;
     padding: 16px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
+    background-color: var(--primary-color);
+    color: #fff;
 }
 
 footer p {
@@ -201,7 +186,13 @@ footer nav {
     padding: 0;
 }
 
+.socialmedia img {
+    width: 40px;
+    height: 40px;
+}
+
 /* Home page hero */
+
 .home-main {
     width: 100%;
     max-width: none;
@@ -236,6 +227,7 @@ footer nav {
 }
 
 /* Home page content */
+
 .home-content {
     max-width: 1000px;
     margin: 0 auto;
@@ -291,8 +283,9 @@ footer nav {
 }
 
 /* Newsletter */
+
 .newsletter {
-    background-color: #e9c46a;
+    background-color: var(--accent1-color);
     color: #18323b;
 }
 
@@ -312,7 +305,7 @@ footer nav {
     width: 100%;
     min-height: 42px;
     padding: 10px;
-    border: 1px solid #264653;
+    border: 1px solid var(--primary-color);
     border-radius: 4px;
     background-color: #fff;
     color: #18323b;
@@ -325,7 +318,7 @@ footer nav {
     padding: 12px 20px;
     border: 0;
     border-radius: 6px;
-    background-color: #264653;
+    background-color: var(--primary-color);
     color: #fff;
     font: inherit;
     font-weight: bold;
@@ -339,11 +332,21 @@ footer nav {
 }
 
 /* Home page CSS Grid */
+
 .home-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 24px;
     margin: 24px 0;
+}
+
+/* Heading for the home page grid */
+
+.home-grid > h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin: 0 0 10px;
+    padding: 8px;
 }
 
 .home-card {
@@ -373,6 +376,7 @@ footer nav {
 }
 
 /* Trips page */
+
 .trips-main {
     max-width: 1000px;
     width: 100%;
@@ -389,6 +393,14 @@ footer nav {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
     margin: 24px 0;
+}
+
+/* Heading for the trips grid, if present */
+
+.trip-grid > h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .trip-card {
@@ -449,7 +461,7 @@ footer nav {
 }
 
 .trip-summary thead th {
-    background-color: #264653;
+    background-color: var(--primary-color);
     color: #fff;
 }
 
@@ -467,11 +479,12 @@ footer nav {
 
 .trips-contact {
     text-align: center;
-    background-color: #e9c46a;
+    background-color: var(--accent1-color);
     color: #18323b;
 }
 
 /* Smaller screens */
+
 @media screen and (max-width: 700px) {
     header {
         grid-template-columns: 1fr;
@@ -496,6 +509,22 @@ footer nav {
     .home-card img,
     .trip-card img {
         height: 240px;
+    }
+
+    .history {
+        grid-template-columns: 1fr;
+    }
+
+    .history h2 {
+        grid-column: 1;
+    }
+
+    .adventures {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .adventures h2 {
+        grid-column: 1 / -1;
     }
 
     footer {
